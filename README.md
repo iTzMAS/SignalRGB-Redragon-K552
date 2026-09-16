@@ -1,4 +1,4 @@
-# ⌨️ Redragon K557 Kala V2 - SignalRGB Plugin
+# ⌨️ Redragon K552- SignalRGB Plugin
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Platform: SignalRGB](https://img.shields.io/badge/Platform-SignalRGB-orange.svg)
@@ -8,7 +8,6 @@
   <img src="preview3.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
 </p>
 
-[🇧🇷 Português abaixo / Portuguese below]
 
 This repository contains a high-performance JavaScript plugin developed to integrate the **Redragon K557 Kala V2** mechanical keyboard with **SignalRGB** software.
 
@@ -53,67 +52,7 @@ The K557 controller uses a specific protocol where LEDs are addressed in vertica
 
 Feel free to open **Issues** if you encounter bugs or want to suggest improvements. The goal is to keep this plugin as lightweight and compatible as possible.
 
-<p align="center">
-  <img src="preview2.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
-</p>
 
----
-
-<p align="center">
-  <img src="preview.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
-</p>
-
-# 🇧🇷 Versão em Português
-
-Este repositório contém um plugin (addon) desenvolvido em JavaScript para integrar o teclado mecânico **Redragon K557 Kala V2** ao software **SignalRGB**.
-
-Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting" de LEDs e layout incorreto do Numpad que ocorrem com drivers genéricos.
-
-## 🚀 Funcionalidades
-
-* **Mapeamento 1:1 Preciso:** Todas as teclas, incluindo o Numpad e teclas de mídia, estão mapeadas em suas posições físicas corretas.
-* **Correção de Matriz:** Resolve a lógica de "saltos de 8 bytes" do controlador da Redragon, garantindo que efeitos de onda (Wave/Visor) fluam perfeitamente da esquerda para a direita.
-* **Alta Performance (60 FPS):** Código otimizado com pré-cálculo de coordenadas e gerenciamento de memória eficiente. Uso de CPU reduzido a quase zero durante a renderização.
-* **Layout Visual:** Inclui suporte para exibição da imagem do teclado dentro do SignalRGB.
-* **Modos Híbridos:** Suporte para modo "Canvas" (efeitos da tela) e modo "Forçado" (cor única estática).
-
-## 📦 Instalação Automática (Recomendado)
-
-1.  Abra o SignalRGB.
-2.  Vá em Configurações (Settings) > Addons.   
-3.  Clique no botão **+ Add-on**.
-4.  Cole a seguinte URL: `https://github.com/vinemelo/SignalRGB-Redragon-K557-Kala-V2`
-5.  Reinicie o SignalRGB ou vá em **Dispositivos (Devices)** e clique em **Recarregar Plugins (Reload Plugins)**.
-6.  O plugin será sincronizado e atualizado automaticamente.
-7.  O teclado deve aparecer automaticamente na aba **Dispositivos (Devices)** como **Redragon K557 Kala V2**.
-
-## 📦 Instalação Manual
-
-1.  Baixe o arquivo `Redragon-K557-Kala-V2.js` deste repositório.
-2.  Navegue até a pasta de plugins do SignalRGB em Documentos:
-    * `C:\Users\YOUR_USER\Documents\WhirlwindFX\Plugins`
-3.  Cole o arquivo `.js` dentro desta pasta.
-4.  Reinicie o SignalRGB ou vá em **Dispositivos (Devices)** e clique em **Recarregar Plugins (Reload Plugins)**.
-5.  O teclado deve aparecer automaticamente na aba **Dispositivos (Devices)** como **Redragon K557 Kala V2**.
-
-## 🔧 Detalhes Técnicos
-
-O controlador do K557 V2 utiliza um protocolo onde os LEDs são endereçados em colunas verticais com saltos de memória. O plugin implementa:
-
-* **Reverse Engineering da Matriz:** Tradução dos IDs lógicos (0-126) para coordenadas cartesianas (X, Y) no Canvas do SignalRGB.
-* **Protocolo USB:** Envio de pacotes de 64 bytes com checksum calculado em tempo real.
-* **Buffer Otimizado:** Utilização de arrays estáticos para evitar o acionamento constante do Garbage Collector do JavaScript.
-
-## 🤝 Contribuição
-
-Sinta-se à vontade para abrir **Issues** se encontrar algum bug ou sugerir melhorias no código. O objetivo é manter este plugin o mais leve e compatível possível.
-
-## ⚖️ License / Licença
-
-**English:**
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**Português:**
 Este projeto está licenciado sob a Licença MIT - consulte o ficheiro [LICENSE](LICENSE) para mais detalhes.
 
 ---
