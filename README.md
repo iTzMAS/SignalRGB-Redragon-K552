@@ -4,7 +4,7 @@
 ![Platform: SignalRGB](https://img.shields.io/badge/Platform-SignalRGB-orange.svg)
 ![Status: Stable](https://img.shields.io/badge/Status-Stable-green.svg)
 
-This repository contains a high-performance JavaScript plugin developed to integrate the **Redragon K557 Kala V2** mechanical keyboard with **SignalRGB** software.
+This repository contains a high-performance JavaScript plugin developed to integrate the **Redragon K552** mechanical keyboard with **SignalRGB** software.
 
 It addresses common issues found in generic drivers, such as incorrect mapping, LED ghosting, and misplaced Numpad keys.
 
@@ -24,7 +24,7 @@ It addresses common issues found in generic drivers, such as incorrect mapping, 
 4.  Paste the following URL: `https://github.com/iTzMAS/SignalRGB-Redragon-K552`
 5.  Restart SignalRGB or go to **Devices** and click **Reload Plugins**
 6.  The plugin will be automatically synced and updated.
-7.  The keyboard should appear automatically in the **Devices** tab as **Redragon K557 Kala V2**.
+7.  The keyboard should appear automatically in the **Devices** tab as **Redragon K552**.
 
 ## 📦 Manual Installation
 
